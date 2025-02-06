@@ -13,12 +13,14 @@ int main()
 
 	//Infinite loop until 
 	while (true) {
-		cin >> x
+		//Syntax error, include semicolon
+		cin >> x;
 		/* check if read into green was successful: */
 		if (!cin.good()) break; /* if read failed, exit the loop */
 		if (x > m) m = x;
 	}
-	cout << 'largest value was ' << m << '\n';
+	//Use double colons instead of single colons bc it is a string 
+	cout << "largest value was " << m << '\n';
 	return 0;
 }
 

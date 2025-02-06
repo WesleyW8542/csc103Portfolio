@@ -8,8 +8,8 @@ using std::cout;
 int main()
 {
 	int i=5, j=6, k=7, n=3;
-	cout << i + j * k - k % n << "\n";
-	cout << i / n << "\n";
+	cout << i + j * k - k % n << "\n"; //i+(j*k)-(k%n) = 5+(42)-1= 46
+	cout << i / n << "\n"; //1
 	return 0;
 }
 
