@@ -8,7 +8,7 @@ using std::endl;
 
 int main() {
 	int n;
-	cout << (n = 4) << endl;
+	cout << (n = 4) << endl; 
 	cout << (n == 4) << endl;
 	cout << (n > 3) << endl;
 	cout << (n < 4) << endl;

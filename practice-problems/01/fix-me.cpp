@@ -7,9 +7,11 @@ using std::cout;
 
 int main()
 {
+	//lowest possible int in the system 
 	int m = INT_MIN;
 	int x;
 
+	//Infinite loop until 
 	while (true) {
 		cin >> x
 		/* check if read into green was successful: */

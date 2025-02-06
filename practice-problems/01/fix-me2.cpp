@@ -5,7 +5,10 @@ using std::cout;
 
 int main()
 {
-	cout >> hello world.\n;
+	/*Use the extraction operator instead or insertion. 
+	Insertion is used to insert this string into the stream
+	*/
+	cout << "hello world."<<'\n';
 	return 0;
 }
 
