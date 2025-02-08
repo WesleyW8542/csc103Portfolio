@@ -9,8 +9,18 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	//Instantiating variables
+	int x;
+	int average = 0;
+
+	while(true)
+	{
+		cin >> x;
+		//If user input in valid, end loop 
+		if(!cin.good())break;
+		average += x;
+	}
+	cout << "The average is " << average << '\n';
 }
 
 // vim:foldlevel=2
