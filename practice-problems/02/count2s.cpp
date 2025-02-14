@@ -11,8 +11,15 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	int count = 0;
+	int x;
+	cin >> x;
+	while(x%2 == 0)
+	{
+		x /= 2;
+		count++;
+	}
+	cout << count << '\n';
 }
 
 // vim:foldlevel=2

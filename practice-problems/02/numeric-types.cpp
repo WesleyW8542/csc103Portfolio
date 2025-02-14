@@ -18,6 +18,11 @@ int main()
 	int x;
 	x = 3.14;
 	cout << x << '\n';
+	float y = 1000000;
+	cout << y<< '\n';
+	float z = 2.5;
+	int a = 10;
+	cout << z + a << '\n';
 
 	return 0;
 }

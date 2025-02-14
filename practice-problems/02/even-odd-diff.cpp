@@ -14,8 +14,21 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	int x; 
+	int even = 0;
+	int odd = 0;
+	while(cin >> x)
+	{
+		if(x%2 == 0)
+		{
+			even += x;
+		}
+		else 
+		{
+			odd += x;	
+		}
+	}
+	cout << "The difference is " << even - odd << '\n';
 }
 
 // vim:foldlevel=2

@@ -6,8 +6,13 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	int x;
+	int sum = 0;
+	while(cin >> x)
+	{
+		sum += x;
+	}
+	cout << "The sum of the integers is " << sum;
 }
 
 // vim:foldlevel=2

@@ -12,15 +12,14 @@ int main()
 	//Instantiating variables
 	int x;
 	int average = 0;
+	float count = 0;
 
-	while(true)
+	while(cin >> x)
 	{
-		cin >> x;
-		//If user input in valid, end loop 
-		if(!cin.good())break;
+		count++;
 		average += x;
 	}
-	cout << "The average is " << average << '\n';
+	cout << "The average is " << average/count << '\n';
 }
 
 // vim:foldlevel=2
