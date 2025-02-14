@@ -19,7 +19,8 @@ int main()
 		count++;
 		average += x;
 	}
-	cout << "The average is " << average/count << '\n';
+	if (count)
+		cout << "The average is " << average/count << '\n';
 }
 
 // vim:foldlevel=2

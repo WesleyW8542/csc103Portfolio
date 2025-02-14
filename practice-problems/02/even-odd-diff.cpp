@@ -17,8 +17,10 @@ int main()
 	int x; 
 	int even = 0;
 	int odd = 0;
+	int sum = 0;
 	while(cin >> x)
-	{
+		sum += (x%2 == 0) ? x : -x;
+/*	{
 		if(x%2 == 0)
 		{
 			even += x;
@@ -27,8 +29,8 @@ int main()
 		{
 			odd += x;	
 		}
-	}
-	cout << "The difference is " << even - odd << '\n';
+	}  */
+	cout << "The difference is " << sum << '\n';
 }
 
 // vim:foldlevel=2
