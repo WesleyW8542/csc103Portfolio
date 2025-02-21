@@ -1,0 +1,111 @@
+Script started on 2025-02-20 11:07:07-05:00 [TERM="xterm" TTY="/dev/pts/2" COLUMNS="97" LINES="25"]
+[?2004h+[[32m07[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[01m[Kfunctions.cpp:[m[K In function '[01m[Kint[01;32m[K f[m[K()[m[K':
+[01m[Kfunctions.cpp:10:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   10 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lhello from f
+Segmentation fault
+[?2004h+[[32m07[0m]$ [Kg++ functions.cpp 
+[?2004l[01m[Kfunctions.cpp:[m[K In function '[01m[Kint[01;32m[K f[m[K()[m[K':
+[01m[Kfunctions.cpp:10:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   10 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[?2004h+[[32m07[0m]$ [K./a.out 
+[?2004lhello from f
+Illegal instruction
+[?2004h+[[32m07[0m]$ g++ functions.cpp 
+[?2004l./[?2004h+[[32m07[0m]$ [K./a.out 
+[?2004lhello from f
+[?2004h+[[32m07[0m]$ make -B debgu  ug
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -g3 -O0 -UNDEBUG -o functions functions.cpp
+[01m[Kfunctions.cpp:[m[K In function '[01m[Kint[01;32m[K f[m[K()[m[K':
+[01m[Kfunctions.cpp:11:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   11 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[?2004h+[[32m07[0m]$ [K[K+[[32m07[0m]$ [K+[[32m07[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./
+a.out      functions  
++[[32m07[0m]$ ./
+a.out      functions  
++[[32m07[0m]$ ./functions 
+[?2004lhello from f
+[?2004h+[[32m07[0m]$ [Krm a.out 
+[?2004l[?2004h+[[32m07[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ [K+[[32m07[0m]$ ./functions 
+[?2004lhello from f
+return value from f: 99
+[?2004h+[[32m07[0m]$ [K[K+[[32m07[0m]$ [K+[[32m07[0m]$ [K+[[32m07[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ [K+[[32m07[0m]$ ./[H[2J+[[32m07[0m]$ ./functions 
+[?2004lhello from f
+return value from f: 99
+now x is 15
+return value from g(x): 15
+x in main: 10
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions f 
+[?2004lhello from f
+return value from f: 99
+in g(...), x is 15
+return value from g(x): 15
+x in main: 10
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lhello from f
+return value from f: 99
+in h(...), x is 15
+return value from g(x): 15
+x in main: 15
+[?2004h+[[32m07[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lhello from f
+return value from f: 99
+in h(...), z is 15
+return value from g(x): 15
+x in main: 15
+[?2004h+[[32m07[0m]$ [K0 make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m07[0m]$ ./functions 
+[?2004lhello from f
+return value from f: 99
+in h(...), z is 15
+return value from g(x): 15
+x in main: 10
+[?2004h+[[32m07[0m]$ [K[K+[[32m07[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[01m[Kfunctions.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kfunctions.cpp:41:13:[m[K [01;31m[Kerror: [m[Kredeclaration of '[01m[Kint y[m[K'
+   41 |         int [01;31m[Ky[m[K = h(123);  // this is NOT!
+      |             [01;31m[K^[m[K
+[01m[Kfunctions.cpp:39:13:[m[K [01;36m[Knote: [m[K'[01m[Kint y[m[K' previously declared here
+   39 |         int [01;36m[Ky[m[K = g(123);  // this is OK
+      |             [01;36m[K^[m[K
+[01m[Kfunctions.cpp:41:19:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type '[01m[Kint&[m[K' to an rvalue of type '[01m[Kint[m[K'
+   41 |         int y = h([01;31m[K123[m[K);  // this is NOT!
+      |                   [01;31m[K^~~[m[K
+[01m[Kfunctions.cpp:25:12:[m[K [01;36m[Knote: [m[K  initializing argument 1 of '[01m[Kint[01;32m[K h[m[K(int&)[m[K'
+   25 | int h([01;36m[Kint& z[m[K)
+      |       [01;36m[K~~~~~^[m[K
+make: *** [Makefile:21: functions] Error 1
+[?2004h+[[32m07[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[01m[Kfunctions.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kfunctions.cpp:42:15:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type '[01m[Kint&[m[K' to an rvalue of type '[01m[Kint[m[K'
+   42 |         y = h([01;31m[K123[m[K);  // this is NOT!
+      |               [01;31m[K^~~[m[K
+[01m[Kfunctions.cpp:25:12:[m[K [01;36m[Knote: [m[K  initializing argument 1 of '[01m[Kint[01;32m[K h[m[K(int&)[m[K'
+   25 | int h([01;36m[Kint& z[m[K)
+      |       [01;36m[K~~~~~^[m[K
+make: *** [Makefile:21: functions] Error 1
+[?2004h+[[32m07[0m]$   [K+[[32m07[0m]$ [K+[[32m07[0m]$ [?2004l
+exit
+
+Script done on 2025-02-20 11:53:31-05:00 [COMMAND_EXIT_CODE="2"]
