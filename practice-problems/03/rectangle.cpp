@@ -11,7 +11,21 @@ using std::cout;
 
 int main()
 {
-	return 0;
+	int n,m;
+	n = 3;
+	m = 4;
+	for(int i = 0; i < n; i++)
+	{
+		if(i != 0)
+		{
+			cout << '\n';
+		}
+		for(int j = 0; j < m;j++)
+		{
+			cout << "* ";
+			
+		}
+	}
 }
 
 /* Bonus question: change the above so you get a "hollow" rectangle.

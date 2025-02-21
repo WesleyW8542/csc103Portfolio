@@ -11,8 +11,11 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	int b;
+	int n;
+	cin >> b;
+	cin >> n;
+	
 }
 
 // vim:foldlevel=2

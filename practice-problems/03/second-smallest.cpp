@@ -4,13 +4,39 @@
  * clearly on paper (say using the post-it note model) before trying to write
  * any code. */
 #include <iostream>
+#include <climits>
 using std::cin;
 using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	int input = 0;
+	int smallest = INT_MAX, biggest = INT_MAX, target = 0;
+	while(cin >> input)
+	{	
+		if(input > biggest)
+		{
+			if(biggest > target)
+			{
+				biggest = input;
+			}
+			else 
+			{
+				target = biggest;
+				biggest = input;
+			}
+		}
+		else if(input < smallest)
+		{
+			target = smallest;
+			smallest = input;
+		}
+		else 
+		{
+			target = input;
+		}
+	}
+	cout << "The second smallest integer is " << target << '\n';
 }
 
 // vim:foldlevel=2

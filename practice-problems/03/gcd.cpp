@@ -9,8 +9,28 @@ using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	int firstInt = 0;
+	int secInt = 0;
+	cin >> firstInt;
+	cin >> secInt;
+	int gcd = 0;
+	if(firstInt >= secInt)
+	{
+		for(int i = 1; i < firstInt; i++)
+		{
+			if((firstInt%i == 0) && (secInt%i == 0))
+				gcd = i;
+		}
+	}
+	else
+	{
+		for(int i = 1; i < secInt; i++)
+		{
+			if((firstInt%i == 0) && (secInt%i == 0))
+				gcd = i;
+		}	
+	}
+	cout << gcd << '\n';
 }
 
 // vim:foldlevel=2
