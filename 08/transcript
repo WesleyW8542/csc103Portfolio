@@ -1,0 +1,159 @@
+Script started on 2025-02-25 10:54:37-05:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="103" LINES="26"]
+[?2004h+[[32m08[0m]$ [K+[[32m08[0m]$ [K+[[32m08[0m]$ [K+[[32m08[0m]$ [H[2J+[[32m08[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m08[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[01m[Kfunctions.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kfunctions.cpp:10:9:[m[K [01;31m[Kerror: [m[K'[01m[Kswap[m[K' was not declared in this scope
+   10 |         [01;31m[Kswap[m[K(a,b);
+      |         [01;31m[K^~~~[m[K
+[01m[Kfunctions.cpp:10:9:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/13.2/bits/memory_resource.h:47[m[K,
+                 from [01m[K/usr/include/c++/13.2/string:58[m[K,
+                 from [01m[K/usr/include/c++/13.2/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/13.2/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/13.2/ios:44[m[K,
+                 from [01m[K/usr/include/c++/13.2/ostream:40[m[K,
+                 from [01m[K/usr/include/c++/13.2/iostream:41[m[K,
+                 from [01m[Kfunctions.cpp:1[m[K:
+[01m[K/usr/include/c++/13.2/tuple:2187:5:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::swap[m[K'
+ 2187 |     [01;36m[Kswap[m[K(tuple<_Elements...>&, tuple<_Elements...>&) = delete;
+      |     [01;36m[K^~~~[m[K
+In file included from [01m[K/usr/include/c++/13.2/bits/exception_ptr.h:41[m[K,
+                 from [01m[K/usr/include/c++/13.2/exception:164[m[K,
+                 from [01m[K/usr/include/c++/13.2/ios:41[m[K:
+[01m[K/usr/include/c++/13.2/bits/move.h:189:5:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::swap[m[K'
+  189 |     [01;36m[Kswap[m[K(_Tp& __a, _Tp& __b)
+      |     [01;36m[K^~~~[m[K
+[01m[K/usr/include/c++/13.2/bits/move.h:189:5:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::swap[m[K'
+[01m[K/usr/include/c++/13.2/bits/exception_ptr.h:230:5:[m[K [01;36m[Knote: [m[K  '[01m[Kstd::__exception_ptr::swap[m[K'
+  230 |     [01;36m[Kswap[m[K(exception_ptr& __lhs, exception_ptr& __rhs)
+      |     [01;36m[K^~~~[m[K
+make: *** [Makefile:21: functions] Error 1
+[?2004h+[[32m08[0m]$ [K+[[32m08[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functions functions.cpp
+[?2004h+[[32m08[0m]$ ./functions 
+[?2004la == 23, b == 77
+a == 77, b == 23
+[?2004h+[[32m08[0m]$ [K[K+[[32m08[0m]$ echo 'random side notes abou       e about ruan   andom stuff on your computer...'
+[?2004lrandom side note about random stuff on your computer...
+[?2004h+[[32m08[0m]$ [Khead -c 42 /dev/urandom | tr -cd '!-}' && echo
+[?2004lOG*%c\@M1>H
+[?2004h+[[32m08[0m]$ [Kmkdir linking
+[?2004l[?2004h+[[32m08[0m]$ [Kcp ../main.c           mainc .c[K[Kfunctions.cpp linking/main.cpp
+[?2004l[?2004h+[[32m08[0m]$ [Kcp Mk     cd linking/
+[?2004l[?2004h+[[32mlinking[0m]$ ls
+[?2004l[0m[1mmain.cpp[0m
+[?2004h+[[32mlinking[0m]$ vim main.cpp 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[94m[H[2J[?25l[24;1H"main.cpp" 27L, 542B[2;1H½[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[92m[40m  1 [m[94m[1m[91m#include [m[94m[36m<iostream>[m[94m
+[92m[40m  2 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cin;[2;20H[K[3;1H[92m[40m  3 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cout;[3;21H[K[4;1H[92m[40m  4 
+  5 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y);
+[92m[40m  6 
+  7 [m[94m[33mint[m[94m [34mmain[m[94m()
+[92m[40m  8 [m[94m{
+[92m[40m  9 [m[94m    [33mint[m[94m a=[36m23[m[94m,b=[36m77[m[94m;
+[92m[40m 10 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,
+[92m[40m 11 [m[94m[18Ca,      b);
+[92m[40m 12 [m[94m    [34mswap[m[94m(a,b);
+[92m[40m 13 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,a,b);
+[92m[40m 14 [m[94m}
+[92m[40m 15 
+ 16 [m[94m[92m/* function to swap contents of two variables: if you call swap(x,y),[m[94m
+[92m[40m 17 [m[94m[92m * then afterwards, y will have x's value and vice versa. */[m[94m
+[92m[40m 18 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y)
+[92m[40m 19 [m[94m{
+[92m[40m 20 [m[94m    [33mint[m[94m t = x;
+[92m[40m 21 [m[94m    x = y;
+[92m[40m 22 [m[94m    y = t;
+[92m[40m 23 [m[94m    [92m/* [m[94m[1m[95mNOTE[m[94m[92m: there is a clever way you can do this without the temporary[m[94m[24;80H1,1[11CTop]2;main.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;main.cpp[1;5H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$pP+q6b32\P+q6b33\P+q6b34\P+q6b35\P+q6b36\P+q6b37\P+q6b38\P+q6b39\P+q6b3b\P+q4631\P+q4632\P+q2531\P+q2638\P+q6b62\P+q6b49\P+q6b44\P+q6b68\P+q4037\P+q6b50\P+q6b4e\P+q4b31\P+q4b33\P+q4b34\P+q4b35\P+q6b42\P+q5053\P+q5045\[?25l[1;23r[23;1H
+[1;24r[23;1H[92m[40m 24 [m[94m[92m     * variable t...  think about algebra maybe... */[m[94m[24;1H[K[24;80H2,1[11C25%[1;5H[?25h[?4m[?25l[1;23r[23;1H
+[1;24r[23;1H[92m[40m 25 [m[94m}[24;80H[K[24;80H3,1[11C50%[1;5H[?25h[?25l[24;80H[K[24;1H:[?25hsp wa[?25l[24;6H[K[24;6H[?25h[?25l[24;5H[K[24;5H[?25hswap.cpp[?25l"swap.cpp" [New][11;1H[7m[93m[40mmain.cpp                                                                       3,1            11%[m[94m[12;2H[92m[40m 1[m[94m[12;5H[K[13;1H[1m[93m~                                                                                                [14;1H~                                                                                                [15;1H~                                                                                                [16;1H~                                                                                                [17;1H~                                                                                                [18;1H~                                                                                                [19;1H~                                                                                                [20;1H~                                                                                                [21;1H~                                                                                                [22;1H~                                                                                                [m[94m[23;1H[7m[96m[40mswap.cpp                                                                       0,0-1          All]2;swap.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;swap.cpp[12;5H[?25h]2;main.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;main.cpp[11;1Hmain.cpp                                                                       [?25l3,1            11%[m[94m[23;1H[7m[93m[40mswap.cpp                                                                       0,0-1          All[1;5H[?25h[27m[23m[29m[m[94m[H[2J[?25l[1;1H[92m[40m  3 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cout;
+[92m[40m  4 
+  5 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y);
+[92m[40m  6 
+  7 [m[94m[33mint[m[94m [34mmain[m[94m()
+[92m[40m  8 [m[94m{
+[92m[40m  9 [m[94m    [33mint[m[94m a=[36m23[m[94m,b=[36m77[m[94m;
+[92m[40m 10 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,
+[92m[40m 11 [m[94m[18Ca,      b);
+[92m[40m 12 [m[94m    [34mswap[m[94m(a,b);
+[7m[96m[40mmain.cpp                                                                        3,1            11%[m[94m[12;1H[92m[40m  1 [m[94m
+[1m[93m~                                                                                                 [14;1H~                                                                                                 [15;1H~                                                                                                 [16;1H~                                                                                                 [17;1H~                                                                                                 [18;1H~                                                                                                 [19;1H~                                                                                                 [20;1H~                                                                                                 [21;1H~                                                                                                 [22;1H~                                                                                                 [23;1H~                                                                                                 [24;1H~                                                                                                 [m[94m[25;1H[7m[93m[40mswap.cpp                                                                        0,0-1          All[1;5H[?25h[27m[23m[29m[m[94m[H[2J[?25l[1;1H[92m[40m  3 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cout;
+[92m[40m  4 
+  5 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y);
+[92m[40m  6 
+  7 [m[94m[33mint[m[94m [34mmain[m[94m()
+[92m[40m  8 [m[94m{
+[92m[40m  9 [m[94m    [33mint[m[94m a=[36m23[m[94m,b=[36m77[m[94m;
+[92m[40m 10 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,
+[92m[40m 11 [m[94m[18Ca,      b);
+[92m[40m 12 [m[94m    [34mswap[m[94m(a,b);
+[7m[96m[40mmain.cpp                                                                       3,1            11%[m[94m[12;1H[92m[40m  1 [m[94m
+[1m[93m~                                                                                                [14;1H~                                                                                                [15;1H~                                                                                                [16;1H~                                                                                                [17;1H~                                                                                                [18;1H~                                                                                                [19;1H~                                                                                                [20;1H~                                                                                                [21;1H~                                                                                                [22;1H~                                                                                                [m[94m[23;1H[7m[93m[40mswap.cpp                                                                       0,0-1          All[1;5H[?25h]2;swap.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;swap.cpp[11;1Hmain.cpp                                                                       [?25l3,1            11%[m[94m[23;1H[7m[96m[40mswap.cpp                                                                       0,0-1          All[12;5H[?25h]2;main.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;main.cpp[11;1Hmain.cpp                                                                       [?25l3,1            11%[m[94m[23;1H[7m[93m[40mswap.cpp                                                                       0,0-1          All[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 13 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,a,b);[11;80H[7m[96m[40m4,0-1[11C7[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 14 [m[94m}[11;80H[7m[96m[40m5,1  [10C23[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 15 [m[94m[11;80H[7m[96m[40m6,0-1[11C9[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 16 [m[94m[92m/* function to swap contents of two variables: if you call swap(x,y),[m[94m[11;80H[7m[96m[40m7,1  [10C35[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[1;5H[1m[31m[102m{[7;5H}[m[94m
+
+
+[92m[40m 17 [m[94m[92m * then afterwards, y will have x's value and vice versa. */[m[94m[11;80H[7m[96m[40m8[14C41[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[6;5H}[10;1H[92m[40m 18 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y)[11;80H[7m[96m[40m9,1-4[11C7[1;8H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 19 [m[94m{[11;80H[7m[96m[40m10,1-4[9C52[1;8H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 20 [m[94m    [33mint[m[94m t = x;[11;81H[7m[96m[40m1[14C8[1;8H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 21 [m[94m    x = y;[11;81H[7m[96m[40m2[13C64[1;8H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 22 [m[94m    y = t;[11;81H[7m[96m[40m3[13C70[1;8H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 23 [m[94m    [92m/* [m[94m[1m[95mNOTE[m[94m[92m: there is a clever way you can do this without the temporary[m[94m[11;81H[7m[96m[40m4,1  [10C6[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 24 [m[94m[92m     * variable t...  think about algebra maybe... */[m[94m[11;81H[7m[96m[40m5,0-1[9C82[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 25 [m[94m}[11;81H[7m[96m[40m6,1  [10C8[1;5H[?25h[?25l[11;81H7[2;5H[?25h[?25l[11;81H6[1;5H[?25h[?25l[m[94m[24;1H11 fewer lines[1;6H[92m/ vim:foldlevel=3[m[94m[1;23H[K[2;1H[1m[93m~                                                                                                [3;1H~                                                                                                [4;1H~                                                                                                [5;1H~                                                                                                [6;1H~                                                                                                [7;1H~                                                                                                [8;1H~                                                                                                [9;1H~                                                                                                [10;1H~                                                                                                [m[94m[11;10H[7m[96m[40m[+][82CBot]2;main.cpp + (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;main.cpp[1;5H[?25h]2;swap.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;swap.cpp[m[94m[11;1H[7m[93m[40mmain.cpp [+]                                                                   [?25l16,1           Bot[m[94m[23;1H[7m[96m[40mswap.cpp                                                                       0,0-1          All[12;5H[?25h[?25l[m[94m[24;4Hmore lines[24;14H[K[13;1H[1m[4m[92m[40m  2 +--  2 lines: function to swap contents of two variables: if you call swap(x,y),-------------[m[94m[14;1H[92m[40m  4 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y)[14;30H[K[15;1H[1m[4m[92m[40m  5 +--  7 lines: {------------------------------------------------------------------------------[m[94m[16;1H[92m[40m 12 [m[94m[16;5H[K[23;10H[7m[96m[40m[+][67C2,1  ]2;swap.cpp + (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;swap.cpp[13;5H[?25h[?25l[23;80H1,0-1[12;5H[?25h[?25l[m[94m[1m[4m[92m[40m  1 +--  2 lines: function to swap contents of two variables: if you call swap(x,y),-------------[m[94m[13;1H[92m[40m  3 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y)[13;30H[K[14;1H[1m[4m[92m[40m  4 +--  7 lines: {------------------------------------------------------------------------------[m[94m[15;1H[92m[40m 11 [m[94m[15;5H[K[16;1H[1m[93m~                                                                                                [m[94m[23;82H[7m[96m[40m1  [12;5H[?25h[?25l[m[94m[92m[40m  1 [m[94m[92m/* function to swap contents of two variables: if you call swap(x,y),[m[94m[12;74H[K[13;3H[92m[40m2[m[94m[1C[92m * then afterwards, y will have x's value and vice versa. */[m[94m
+[92m[40m  3 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y)[14;30H[K[15;1H[1m[4m[92m[40m  4 +--  7 lines: {------------------------------------------------------------------------------[m[94m[16;1H[92m[40m 11 [m[94m[16;5H[K[23;82H[7m[96m[40m2[12;6H[?25h[?25l[23;80H2[13;6H[?25h[?25l[23;80H3[14;6H[?25h[?25l[23;80H4,1[15;5H[?25h[?25l[23;80H11,0-1[16;5H[?25h[?25l[m[94m[1m[93m~                                                                                                [m[94m[23;80H[7m[96m[40m4,1   [15;5H[?25h[?25l[m[94m[92m[40m  4 [m[94m{[15;6H[K[16;1H[92m[40m  5 [m[94m    [33mint[m[94m t = x;[16;19H[K[17;1H[92m[40m  6 [m[94m    x = y;[17;15H[K[18;1H[92m[40m  7 [m[94m    y = t;[18;15H[K[19;1H[1m[4m[92m[40m  8 +---  2 lines: NOTE: there is a clever way you can do this without the temporary-------------[m[94m[20;1H[92m[40m 10 [m[94m}[20;6H[K[23;80H[7m[96m[40m5,1-4[16;8H[?25h]2;main.cpp + (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;main.cpp[11;1Hmain.cpp [+]                                                                   [?25l16,1           Bot[m[94m[23;1H[7m[93m[40mswap.cpp [+]                                                                   5,1-4          All[1;5H[?25h[?25l[m[94m[1;2H[92m[40m 1[m[94m[1C[1m[91m#include [m[94m[36m<iostream>[m[94m
+[92m[40m  2 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cin;[2;20H[K[3;1H[92m[40m  3 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cout;[3;21H[K[4;1H[92m[40m  4 [m[94m[4;5H[K[5;1H[92m[40m  5 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y);[5;31H[K[6;1H[92m[40m  6 [m[94m[6;5H[K[7;1H[92m[40m  7 [m[94m[33mint[m[94m [34mmain[m[94m()[7;15H[K[8;1H[92m[40m  8 [m[94m{[8;6H[K[9;1H[92m[40m  9 [m[94m    [33mint[m[94m a=[36m23[m[94m,b=[36m77[m[94m;[9;23H[K[10;1H[92m[40m 10 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,[10;37H[K[11;81H[7m[96m[40m,1 [11CTop[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 11 [m[94m[18Ca,      b);[24;1H[K[11;80H[7m[96m[40m2[14C16%[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 12 [m[94m    [34mswap[m[94m(a,b);[11;80H[7m[96m[40m3[14C33[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 13 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,a,b);[11;80H[7m[96m[40m4,0-1[10C50[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 14 [m[94m}[11;80H[7m[96m[40m5,1  [10C66[1;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 15 [m[94m[11;80H[7m[96m[40m6,0-1[10C83[1;5H[?25h[?25l[11;80H7,1  [2;5H[?25h[?25l[m[94m[3;5H[1m[31m[102m{[9;5H}[m[94m[11;80H[7m[96m[40m8[3;5H[?25h[?25l[m[94m{[9;5H}[11;80H[7m[96m[40m9,1-4[4;8H[?25h[?25l[11;80H10,1-4[5;8H[?25h[?25l[11;81H1[6;8H[?25h[?25l[11;81H2[7;8H[?25h[?25l[11;81H3[8;8H[?25h[?25l[11;81H2[7;8H[?25h[?25l[11;81H3[8;8H[?25h[?25l[m[94m[3;5H[1m[31m[102m{[9;5H}[m[94m[11;81H[7m[96m[40m4,1  [9;5H[?25h[?25l[m[94m[3;5H{[9;5H}[11;81H[7m[96m[40m5,0-1[10;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 16 [m[94m[92m// vim:foldlevel=3[m[94m[11;81H[7m[96m[40m6,1  [9CBot[10;5H[?25h[?25l[11;81H5,0-1[9;5H[?25h[?25l[m[94m[2;5H[1m[31m[102m{[8;5H}[m[94m[11;81H[7m[96m[40m4,1  [8;5H[?25h[?25l[m[94m[2;5H{[8;5H}[11;81H[7m[96m[40m3,1-4[7;8H[?25h[?25l[11;81H2[6;8H[?25h[?25l[11;81H1[5;8H[?25h[?25l[11;81H0[4;8H[?25h[?25l[11;80H9,1-4 [3;8H[?25h[?25l[m[94m[2;5H[1m[31m[102m{[8;5H}[m[94m[11;80H[7m[96m[40m8,1  [2;5H[?25h[?25l[m[94m{[8;5H}[11;80H[7m[96m[40m7[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  6 [m[94m[11;80H[7m[96m[40m6,0-1[10C83%[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  5 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y);[11;80H[7m[96m[40m5,1  [10C66[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  4 [m[94m[11;80H[7m[96m[40m4,0-1[10C50[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  3 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cout;[11;80H[7m[96m[40m3,1  [10C33[1;5H[?25h[?25l[11;80H4,0-1[2;5H[?25h[?25l[11;80H5,1  [3;5H[?25h[?25l[11;80H6,0-1[4;5H[?25h[?25l[11;80H7,1  [5;5H[?25h[?25l[11;80H8[6;5H[?25h[?25l[11;80H9,1-4[7;8H[?25h[?25l[11;80H10,1-4[8;8H[?25h[?25l[11;81H1[9;8H[?25h[?25l[11;81H2[10;8H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 13 [m[94m    [34mprintf[m[94m([36m"a == [m[94m[31m%i[m[94m[36m, b == [m[94m[31m%i\n[m[94m[36m"[m[94m,a,b);[11;81H[7m[96m[40m3[13C50[10;8H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[4;5H[1m[31m[102m{[m[94m[10;1H[92m[40m 14 [m[94m[1m[31m[102m}[m[94m[11;81H[7m[96m[40m4,1  [9C66[10;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[3;5H{[9;5H}
+[92m[40m 15 [m[94m[11;81H[7m[96m[40m5,0-1[9C83[10;5H[?25h[?25l[1;10r[m[94m[10;1H
+[1;24r[10;1H[92m[40m 16 [m[94m[92m// vim:foldlevel=3[m[94m[11;81H[7m[96m[40m6,1  [9CBot[10;5H[?25h[?25l[11;81H5,0-1[9;5H[?25h[?25l[m[94m[2;5H[1m[31m[102m{[8;5H}[m[94m[11;81H[7m[96m[40m4,1  [8;5H[?25h[?25l[m[94m[2;5H{[8;5H}[11;81H[7m[96m[40m3,1-4[7;8H[?25h[?25l[11;81H2[6;8H[?25h[?25l[11;81H1[5;8H[?25h[?25l[11;81H0[4;8H[?25h[?25l[11;80H9,1-4 [3;8H[?25h[?25l[m[94m[2;5H[1m[31m[102m{[8;5H}[m[94m[11;80H[7m[96m[40m8,1  [2;5H[?25h[?25l[m[94m{[8;5H}[11;80H[7m[96m[40m7[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  6 [m[94m[11;80H[7m[96m[40m6,0-1[10C83%[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  5 [m[94m[33mvoid[m[94m [34mswap[m[94m([33mint[m[94m& x, [33mint[m[94m& y);[11;80H[7m[96m[40m5,1  [10C66[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  4 [m[94m[11;80H[7m[96m[40m4,0-1[10C50[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  3 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cout;[11;80H[7m[96m[40m3,1  [10C33[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  2 [m[94m[1m[38;5;64musing[m[94m [34mstd[m[94m::cin;[11;80H[7m[96m[40m2[14C16[1;5H[?25h[?25l[1;10r[m[94m[1;1H[L[1;24r[1;1H[92m[40m  1 [m[94m[1m[91m#include [m[94m[36m<iostream>[m[94m[11;80H[7m[96m[40m1[14CTop[1;5H[?25h[?25l[11;80H2[2;5H[?25h[?25l[11;80H3[3;5H[?25h[?25l[24;1H[m[94m:update"main.cpp" 16L, 231B written[11;10H[7m[96m[40m    ]2;main.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;main.cpp[3;5H[?25h]2;swap.cpp + (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;swap.cpp[m[94m[11;1H[7m[93m[40mmain.cpp                                                                       [?25l3,1            Top[m[94m[23;1H[7m[96m[40mswap.cpp [+]                                                                   5,1-4          All[16;8H[?25h[?25l[m[94m[24;1H[K[24;1H:update"swap.cpp" [New] 10L, 310B written[23;10H[7m[96m[40m    ]2;swap.cpp (~/repos/ccny/teaching/codearchives/csc103-lectures/08/linking) - VIM]1;swap.cpp[16;8H[?25h[?25l[m[94m[24;1H[K[24;1H:[?25hqas...[?25l[24;5H[K[24;5H[?25h[?25l[24;4H[K[24;4H[?25h...[?25lll[24;6H[K[24;6H[?25h[?25l[?2004l[>4;m]2;xterm]1;xterm[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?1004l[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h+[[32mlinking[0m]$ [Kls
+[?2004l[0m[1mmain.cpp[0m  [1mswap.cpp[0m
+[?2004h+[[32mlinking[0m]$ g++ main.cpp [K[Kswap.cpp 
+[?2004l/usr/bin/ld: /usr/lib64/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/Scrt1.o: in function `_start':
+/builddir/glibc-2.38/csu/../sysdeps/x86_64/start.S:103:(.text+0x17): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+[?2004h+[[32mlinking[0m]$ [Kg++ main.cpp 
+[?2004l/usr/bin/ld: /tmp/ccIf4tBF.o: in function `main':
+main.cpp:(.text+0x50): undefined reference to `swap(int&, int&)'
+collect2: error: ld returned 1 exit status
+[?2004h+[[32mlinking[0m]$ [Kg++ -c min  ain.cpp 
+[?2004l[?2004h+[[32mlinking[0m]$ [Kl swap.cpp            ls 
+main.cpp  main.o    swap.cpp  
++[[32mlinking[0m]$ ls [K./main.o
+[?2004lbash: ./main.o: Permission denied
+[?2004h+[[32mlinking[0m]$ g++ -c swap.cpp 
+[?2004l[?2004h+[[32mlinking[0m]$ [Kls 
+main.cpp  main.o    swap.cpp  swap.o    
++[[32mlinking[0m]$ ls    nm -C main.o 
+[?2004l                 U swap(int&, int&)
+0000000000000012 r std::__detail::__integer_to_chars_is_unsigned<unsigned int>
+0000000000000013 r std::__detail::__integer_to_chars_is_unsigned<unsigned long>
+0000000000000014 r std::__detail::__integer_to_chars_is_unsigned<unsigned long long>
+                 U std::ios_base_library_init()
+                 U __stack_chk_fail
+0000000000000000 T main
+                 U printf
+[?2004h+[[32mlinking[0m]$ [Kg++[Knm -C swap.o 
+[?2004l0000000000000000 T swap(int&, int&)
+[?2004h+[[32mlinking[0m]$ [Kg++ main.o s2w  wap.o -o /p  protg  g[Krunnable-program
+[?2004l[?2004h+[[32mlinking[0m]$ [Kls
+[?2004l[0m[1mmain.cpp[0m  [30mmain.o[0m  [04;32mrunnable-program[0m  [1mswap.cpp[0m  [30mswap.o[0m
+[?2004h+[[32mlinking[0m]$ ./runnable-program 
+[?2004la == 23, b == 77
+a == 77, b == 23
+[?2004h+[[32mlinking[0m]$ [Kexit
+[?2004lexit
+
+Script done on 2025-02-25 11:53:06-05:00 [COMMAND_EXIT_CODE="0"]
