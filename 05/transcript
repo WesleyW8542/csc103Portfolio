@@ -1,0 +1,63 @@
+Script started on 2025-02-11 11:07:25-05:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="97" LINES="24"]
+[?2004h+[[32m05[0m]$ maek  ke
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o sum sum.cpp
+[01m[Ksum.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Ksum.cpp:7:33:[m[K [01;35m[Kwarning: [m[K'[01m[Kx[m[K' is used uninitialized [[01;35m[K-Wuninitialized[m[K]
+    7 |         cout << "x == " << x << [01;35m[K"\n"[m[K;
+      |                                 [01;35m[K^~~~[m[K
+[01m[Ksum.cpp:6:13:[m[K [01;36m[Knote: [m[K'[01m[Kx[m[K' was declared here
+    6 |         int [01;36m[Kx[m[K;
+      |             [01;36m[K^[m[K
+[?2004h+[[32m05[0m]$ ./sum 
+[?2004lx == 0
+[?2004h+[[32m05[0m]$ ./sum 
+[?2004lx == 0
+[?2004h+[[32m05[0m]$ echo 'note: probably biased towards zeor  ro, but it is noit    t guaranteed!'
+[?2004lnote: probably biased towards zero, but it is not guaranteed!
+[?2004h+[[32m05[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o sum sum.cpp
+[?2004h+[[32m05[0m]$ echo {1..10}
+[?2004l1 2 3 4 5 6 7 8 9 10
+[?2004h+[[32m05[0m]$ [Kecho {1..10} | ./sum 
+[?2004lsum was: 55
+[?2004h+[[32m05[0m]$ [K./sum 
+[?2004l1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+sum was: 55
+[?2004h+[[32m05[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o largest largest.cpp
+[01m[Klargest.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Klargest.cpp:10:27:[m[K [01;31m[Kerror: [m[K'[01m[Ksum[m[K' was not declared in this scope
+   10 |                 max = MAX([01;31m[Ksum[m[K,x);
+      |                           [01;31m[K^~~[m[K
+[01m[Klargest.cpp:10:23:[m[K [01;31m[Kerror: [m[K'[01m[KMAX[m[K' was not declared in this scope
+   10 |                 max = [01;31m[KMAX[m[K(sum,x);
+      |                       [01;31m[K^~~[m[K
+make: *** [Makefile:21: largest] Error 1
+[?2004h+[[32m05[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o largest largest.cpp
+[01m[Klargest.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Klargest.cpp:12:27:[m[K [01;31m[Kerror: [m[K'[01m[Ksum[m[K' was not declared in this scope
+   12 |                 max = MAX([01;31m[Ksum[m[K,x);
+      |                           [01;31m[K^~~[m[K
+[01m[Klargest.cpp:5:20:[m[K [01;36m[Knote: [m[Kin definition of macro '[01m[KMAX[m[K'
+    5 | #define MAX(a,b) (([01;36m[Ka[m[K<b)?b:a)
+      |                    [01;36m[K^[m[K
+make: *** [Makefile:21: largest] Error 1
+[?2004h+[[32m05[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o largest largest.cpp
+g++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o sum sum.cpp
+[?2004h+[[32m05[0m]$ echo 234890 238092 2398 34 342 9829898 2300 | ./largest 
+[?2004lmax was: 9829898
+[?2004h+[[32m05[0m]$ [Kexit
+[?2004lexit
+
+Script done on 2025-02-11 11:51:58-05:00 [COMMAND_EXIT_CODE="0"]

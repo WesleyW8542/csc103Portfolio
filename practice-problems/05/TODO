@@ -1,0 +1,13 @@
+Function pointers and folding?
+Inner product?
+Long integers?
+Something like mod-avgs.tex in the exam problems -- need a situation where they
+can use the vector as a lookup table for a function.  Any of these would work:
+
+	* histogram
+	* frequency table
+	* checking for presence of all characters in a string
+	* checking for all remainders after division by some value m
+	* sums or averages by category
+	* perhaps you could count the number of base 10 digits and then get an
+	 average for each one?

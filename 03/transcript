@@ -1,0 +1,33 @@
+Script started on 2025-02-04 11:31:06-05:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="97" LINES="24"]
+[?2004h+[[32m03[0m]$ g++ la[Kdatatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+[?2004h+[[32m03[0m]$ [K+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.3
+f+f+f == 0.3
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l.[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.30000000000000004
+f+f+f == 0.30000000000000004
+[?2004h+[[32m03[0m]$ g_+_+    ++ datatypes.cpp 
+[?2004l[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g	   == 0.3
+f+f+f == 0.3
+[?2004h+[[32m03[0m]$ g++ ; datatypes.cpp 
+[?2004l./a[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.3
+f+f+f == 0.3
+[?2004h+[[32m03[0m]$ g++ datatypes.cpp 
+[?2004l./[?2004h+[[32m03[0m]$ [K./a.out 
+[?2004lhmmmmmmm.
+g     == 0.29999999999999999
+f+f+f == 0.30000000000000004
+[?2004h+[[32m03[0m]$ [K+[[32m03[0m]$ exit
+[?2004lexit
+
+Script done on 2025-02-04 12:01:53-05:00 [COMMAND_EXIT_CODE="0"]
