@@ -1,0 +1,18 @@
+Script started on 2025-03-04 10:53:54-05:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="103" LINES="26"]
+[?2004h+[[32m10[0m]$ [K+[[32m10[0m]$ [K+[[32m10[0m]$ [K+[[32m10[0m]$ [K+[[32m10[0m]$ [K+[[32m10[0m]$ [K+[[32m10[0m]$ mak3
+[?2004lbash: mak3: command not found
+[?2004h+[[32m10[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o vectors vectors.cpp
+[?2004h+[[32m10[0m]$ echo {1..10}
+[?2004l1 2 3 4 5 6 7 8 9 10
+[?2004h+[[32m10[0m]$ [Kecho {1..10} | ./vectors 
+[?2004l10 9 8 7 6 5 4 3 2 1 
+[?2004h+[[32m10[0m]$ [Kfor d in */ ; do (cd "$d" && ls *.cpp | sed 's/\.cpp//' > .gitignore && cd - ) ; done+[[32m10[0m]$ [Kecho {1..10} > numbers
+[?2004l[?2004h+[[32m10[0m]$ [Kcat numbers 
+[?2004l1 2 3 4 5 6 7 8 9 10
+[?2004h+[[32m10[0m]$ [K./vectors < numbers 
+[?2004l10 9 8 7 6 5 4 3 2 1 
+[?2004h+[[32m10[0m]$ [Kmv    exit
+[?2004lexit
+
+Script done on 2025-03-04 11:59:55-05:00 [COMMAND_EXIT_CODE="0"]
