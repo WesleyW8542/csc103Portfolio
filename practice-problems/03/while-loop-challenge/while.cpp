@@ -16,10 +16,22 @@ if (b) {
 	X;
 }
 
+while(b)
+{
+	X;
+	break;
+}
 /* 2. */
 
 for (X; b; Y) {
 	Z;
+}
+
+X;
+while(b)
+{
+	Z;
+	Y;
 }
 
 /* 3. */
@@ -28,12 +40,30 @@ do {
 	X;
 } while (b);
 
+X;
+while(b)
+{
+	X;
+	break;
+}
+
 /* 4. */
 
 if (b) {
 	X;
 } else {
 	Y;
+}
+
+while(b)
+{
+	X;
+	break;
+}
+while(!b)
+{
+	Y;
+	break;
 }
 
 /* 5. */
@@ -44,6 +74,22 @@ if (b1) {
 	Y;
 } else if (b3) {
 	Z;
+}
+
+while(b1)
+{
+	X;
+	break;
+}
+while(b2)
+{
+	Y;
+	break;
+}
+while(b3)
+{
+	Z;
+	break;
 }
 
 // vim:foldlevel=2

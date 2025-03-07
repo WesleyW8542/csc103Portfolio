@@ -15,6 +15,13 @@ int main()
 	int n;
 	cin >> b;
 	cin >> n;
+	while(n > 0)
+	{
+		cout << n%b;
+		n /= b;
+	}
+	cout << '\n';
+
 	
 }
 

@@ -14,15 +14,32 @@
  * 4. go back to (1) until stdin has no more integers to read.
  * */
 
-
 #include <iostream>
 using std::cin;
 using std::cout;
 
 int main()
 {
-	/* your answer goes here... */
-	return 0;
+	int x;
+	while (cin >> x)
+	{
+		int steps = 0;
+		while (x != 1)
+		{
+			if (x % 2 == 0)
+			{
+				x /= 2;
+				steps++;
+			}
+			else
+			{
+				x *= 3;
+				x++;
+				steps++;
+			}
+		}
+		cout << steps << '\n';
+	}
 }
 
 // vim:foldlevel=2

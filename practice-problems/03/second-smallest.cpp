@@ -11,6 +11,7 @@ using std::cout;
 int main()
 {
 	int input = 0;
+	int num = 0;
 	int smallest = INT_MAX, biggest = INT_MAX, target = 0;
 	while(cin >> input)
 	{	
@@ -35,8 +36,16 @@ int main()
 		{
 			target = input;
 		}
+		num++;
 	}
-	cout << "The second smallest integer is " << target << '\n';
+	if(num <= 2)
+	{
+		cout << "Not enough integers" << '\n';
+	}
+	else
+	{
+		cout << "The second smallest integer is " << target << '\n';
+	}
 }
 
 // vim:foldlevel=2

@@ -12,10 +12,13 @@
  * */
 
 /* your answer goes here... */
+void swap(int &x, int &y);
 
 int main()
 {
-	return 0;
+	int x = 6;
+	int y = 10;
+	swap(x, y);
 }
 
 // vim:foldlevel=2

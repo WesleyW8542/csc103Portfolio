@@ -16,7 +16,7 @@ int main()
 	int sum = 0;
 	int oddSum = 0;
 	cin >> n;
-	for(int i = 0; i <= n; i++)
+	for(int i = 1; i <= n; i++)
 	{
 		sum += i*i;
 	}
@@ -25,7 +25,7 @@ int main()
 		oddSum += i*i;
 	}
 	cout << sum << '\n';
-	cout << oddSum;
+	cout << oddSum << '\n';
 
 }
 

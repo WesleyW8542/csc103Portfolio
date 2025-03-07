@@ -20,9 +20,13 @@ if (A) {
 /* TODO: perhaps thinking in terms of Venn diagrams corresponding to the
  * conditions A,B,C, try to describe as precisely as you can when:
  *   - X(); will be dead code
+ *   if A == false
  *   - Y(); will be dead code
+ *   if A == false and B == false
  *   - Z(); will be dead code
+ *   if A == false and B == false and C == false
  *   - W(); will be dead code
+ *   if A == false and B == false and C == false
  * See if you can generalize the result to an arbitrary number of conditions.
  * */
 

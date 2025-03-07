@@ -6,12 +6,21 @@
 using std::cin;
 using std::cout;
 
-/* your answer goes here... */
-
+void swap(int &x, int &y)
+{
+	int temp = y;
+	y = x;
+	x = temp;
+}
 int main()
 {
 	/* TODO: write a little test here to make sure your function works. */
-	return 0;
+	int x, y;
+	cin >> x;
+	cin >> y;
+	swap(x, y);
+	cout << "x is equal to " << x << '\n';
+	cout << "y is equal to " << y << '\n';
 }
 
 /* TODO: (bonus question) Can you rewrite your swap function so that it does
