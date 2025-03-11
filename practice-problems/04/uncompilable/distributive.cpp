@@ -16,5 +16,12 @@ if (A) {
 	Z();
 }
 
-
+if(A)
+{
+	Y();
+}
+else
+{
+	Z();
+}
 // vim:foldlevel=2
