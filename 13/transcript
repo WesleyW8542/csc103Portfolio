@@ -1,0 +1,57 @@
+Script started on 2025-03-18 11:14:08-04:00 [TERM="xterm" TTY="/dev/pts/5" COLUMNS="97" LINES="24"]
+[?2004h+[[32m13[0m]$ echo 3 9 | ./tr::[[32m13[0m]$ echo 3 9 | ./t[15P+[[32m13[0m]$ make  
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functional functional.cpp
+[?2004h+[[32m13[0m]$ echo 3 9 | ./functional 
+[?2004l12
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functional functional.cpp
+[01m[Kfunctional.cpp:[m[K In function '[01m[Kint[01;32m[K fold[m[K(const std::vector<int>&, binaryop, int)[m[K':
+[01m[Kfunctional.cpp:27:34:[m[K [01;31m[Kerror: [m[Kinvalid use of member function '[01m[Kstd::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::[01;32m[Ksize[m[K() const [35m[K[with _Tp = int; _Alloc = std::allocator<int>; size_type = long unsigned int][m[K[m[K' (did you forget the '[01m[K()[m[K' ?)
+   27 |         for (size_t i = 0; i < [01;31m[KV.size[m[K; i++) {
+      |                                [01;31m[K~~^~~~[m[K
+      |                                      [32m[K()[m[K
+make: *** [Makefile:23: functional] Error 1
+[?2004h+[[32m13[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functional functional.cpp
+[?2004h+[[32m13[0m]$ echo {  1..10} | ./functional 
+[?2004l sum is 55
+prod is 3628800
+[?2004h+[[32m13[0m]$ [Kecho $(( 2*3*4*5*6*7*8*9*10))
+[?2004l3628800
+[?2004h+[[32m13[0m]$ [K[K+[[32m13[0m]$ [K+[[32m13[0m]$ [K+[[32m13[0m]$ exit    [K+[[32m13[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o functional functional.cpp
+g++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello world
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+./[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello world
+hello world
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello world
+hello world
+searching for 'll'
+2
+[?2004h+[[32m13[0m]$ [Kam  amk   make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+.[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello world
+hello world
+searching for 'll' in hello world
+2
+[?2004h+[[32m13[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o strings strings.cpp
+[?2004h+[[32m13[0m]$ ./strings 
+[?2004lhello world
+hello world
+searching for 'll' in hello world
+2
+searching for 'asdf' in hello world
+18446744073709551615
+[?2004h+[[32m13[0m]$ [Kexit
+[?2004lexit
+
+Script done on 2025-03-18 11:53:11-04:00 [COMMAND_EXIT_CODE="0"]
