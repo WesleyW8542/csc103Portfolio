@@ -1,12 +1,15 @@
 /* "Dead code" is code that will never be executed (the flow of control will
  * never reach those statements).  For example: */
-
+/*
 if (true == false) {
 	cout << "I'm dead\n";
 }
+*/
+
 
 /* Now consider a general if / else if... statement like this: */
 
+/*
 if (A) {
 	X();
 } else if (B) {
@@ -16,6 +19,9 @@ if (A) {
 } else {
 	W();
 }
+
+*/
+
 
 /* TODO: perhaps thinking in terms of Venn diagrams corresponding to the
  * conditions A,B,C, try to describe as precisely as you can when:

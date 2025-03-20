@@ -8,11 +8,25 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+bool search(vector<int> a, int b)
+{
+	for(int i; i < a.size(); i++)
+	{
+		if((a[i] == b))
+		{
+			return true;
+		}
+	}
+	return false;
+}
 
 int main()
 {
-	/* TODO: call your function, make sure it works... */
+	vector <int> ex = {4,5,10,6};
+	int find1 = 10;
+	int find2 = 30;
+	cout << search(ex, find1) << '\n';
+	cout << search(ex, find2) << '\n';
 	return 0;
 }
 

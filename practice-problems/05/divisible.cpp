@@ -10,11 +10,29 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+vector<int> divisible(vector<int> a, int d)
+{
+	vector<int> result;
+	for(int i = 0; i < a.size();i++)
+	{
+		if(a[i]%d == 0)
+		{
+			result.push_back(a[i]);
+		}
+	}
+	return result;
+}
 
 int main()
 {
-	/* TODO: call your function, make sure it works... */
+	int divisor = 3;
+	vector<int> ex = {1,6,9,10,17,18};
+	vector<int> answer = divisible(ex, divisor);
+	for(int i = 0; i < answer.size(); i++)
+	{
+		cout << answer[i] << " ";
+	}
+	cout << '\n';
 	return 0;
 }
 

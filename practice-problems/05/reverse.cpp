@@ -9,7 +9,13 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-/* your answer goes here... */
+vector<int> reverse(vector<int>& a)
+{
+	for (int i = a.size()-1; i >= 0; i--)
+	{
+		
+	}
+}
 
 int main()
 {
