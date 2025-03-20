@@ -1,0 +1,74 @@
+Script started on 2025-03-11 10:54:04-04:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="103" LINES="27"]
+[?2004h+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ make[K+[[32m11[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o vectors vectors.cpp
+[01m[Kvectors.cpp:[m[K In function '[01m[Kbool[01;32m[K subsetsum[m[K(const std::vector<int>&, int)[m[K':
+[01m[Kvectors.cpp:12:14:[m[K [01;31m[Kerror: [m[Kassignment of read-only location '[01m[K(& V)->std::vector<int>::operator[](0)[m[K'
+   12 |         V[0] = 9;
+[01m[Kvectors.cpp:13:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   13 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[Kvectors.cpp:8:42:[m[K [01;35m[Kwarning: [m[Kunused parameter '[01m[Kt[m[K' [[01;35m[K-Wunused-parameter[m[K]
+    8 | bool subsetsum(const vector<int>& V, [01;35m[Kint t[m[K)
+      |                                      [01;35m[K~~~~^[m[K
+make: *** [Makefile:23: vectors] Error 1
+[?2004h+[[32m11[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o vectors vectors.cpp
+[?2004h+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o vectors vectors.cpp
+[?2004h+[[32m11[0m]$ ./vectors 
+[?2004l1
+0
+2
+0
+-1 2
+1
+-1
+1
+11
+1
+23
+0
+[?2004h+[[32m11[0m]$ [K[K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pushfront pushfront.cpp
+g++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o vectors vectors.cpp
+[?2004h+[[32m11[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pushfront pushfront.cpp
+[?2004h+[[32m11[0m]$ echo {1..10} | .;/  / /pushfront 
+[?2004l10 9 8 7 6 5 4 3 2 1 
+[?2004h+[[32m11[0m]$ [K[K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ [K+[[32m11[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pushback pushback.cpp
+g++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pushfront pushfront.cpp
+[?2004h+[[32m11[0m]$ time echo {1..1000000} | ./pushfront 
+[?2004l^C
+
+real	0m26.738s
+user	0m26.568s
+sys	0m0.178s
+[?2004h+[[32m11[0m]$ [Kecho [Ktime echo {1... 100000} | ./pushfront 
+[?2004lsize of V: 100000
+
+real	0m0.905s
+user	0m0.894s
+sys	0m0.027s
+[?2004h+[[32m11[0m]$ [K[7mtime echo {1..100000} | ./pushfront[27m:[[32m11[0m]$ time echo {1..100000} | ./pushfrontp[9P+[[32m11[0m]$ time echo {1..100000} | ./pusb hback 
+[?2004lsize of V: 100000
+
+real	0m0.134s
+user	0m0.148s
+sys	0m0.025s
+[?2004h+[[32m11[0m]$ [K[7mtime echo {1..100000} | ./pushfront[27m:[[32m11[0m]$ time echo {1..100000} | ./pushfront3
+[?2004lsize of V: 300000
+
+real	0m8.741s
+user	0m8.746s
+sys	0m0.059s
+[?2004h+[[32m11[0m]$ [K[7mtime echo {1..100000} | ./pushfront[27m:[[32m11[0m]$ time echo {1..100000} | ./pushfront3300000} | ./[9P+[[32m11[0m]$ time echo {1..300000} | ./pushbC ack 
+[?2004lsize of V: 300000
+
+real	0m0.341s
+user	0m0.332s
+sys	0m0.051s
+[?2004h+[[32m11[0m]$ [Kexit
+[?2004lexit
+
+Script done on 2025-03-11 11:49:37-04:00 [COMMAND_EXIT_CODE="0"]
