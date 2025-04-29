@@ -1,0 +1,162 @@
+Script started on 2025-04-03 11:05:31-04:00 [TERM="xterm" TTY="/dev/pts/2" COLUMNS="97" LINES="24"]
+[?2004h+[[32m17[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pointers pointers.cpp
+[?2004h+[[32m17[0m]$ ./pointers 
+[?2004l(p + 0) == 0x7ffc556250e4
+(p + 1) == 0x7ffc556250e8
+(p + 2) == 0x7ffc556250ec
+(p + 3) == 0x7ffc556250f0
+(q + 0) == 0x7ffc556250e3
+(q + 1) == 0x7ffc556250e4
+(q + 2) == 0x7ffc556250e5
+(q + 3) == 0x7ffc556250e6
+[?2004h+[[32m17[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pointers pointers.cpp
+[01m[Kpointers.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Kpointers.cpp:47:13:[m[K [01;31m[Kerror: [m[Kredeclaration of '[01m[Kint x[m[K'
+   47 |         int [01;31m[Kx[m[K;
+      |             [01;31m[K^[m[K
+[01m[Kpointers.cpp:31:13:[m[K [01;36m[Knote: [m[K'[01m[Kint x[m[K' previously declared here
+   31 |         int [01;36m[Kx[m[K = 9; /* 4 bytes */
+      |             [01;36m[K^[m[K
+make: *** [Makefile:23: pointers] Error 1
+[?2004h+[[32m17[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o pointers pointers.cpp
+[?2004h+[[32m17[0m]$ echo {1..16} | ./pointers 
+[?2004l(p + 0) == 0x7ffc346004dc
+(p + 1) == 0x7ffc346004e0
+(p + 2) == 0x7ffc346004e4
+(p + 3) == 0x7ffc346004e8
+(q + 0) == 0x7ffc346004db
+(q + 1) == 0x7ffc346004dc
+(q + 2) == 0x7ffc346004dd
+(q + 3) == 0x7ffc346004de
+A[0] = 1
+A[1] = 2
+A[2] = 3
+A[3] = 4
+A[4] = 5
+A[5] = 6
+A[6] = 7
+A[7] = 8
+A[8] = 9
+A[9] = 10
+A[10] = 11
+A[11] = 12
+A[12] = 13
+A[13] = 14
+A[14] = 15
+A[15] = 16
+[?2004h+[[32m17[0m]$ [Kecho {1..100} | ./pointers 
+[?2004l(p + 0) == 0x7fffd4101e2c
+(p + 1) == 0x7fffd4101e30
+(p + 2) == 0x7fffd4101e34
+(p + 3) == 0x7fffd4101e38
+(q + 0) == 0x7fffd4101e2b
+(q + 1) == 0x7fffd4101e2c
+(q + 2) == 0x7fffd4101e2d
+(q + 3) == 0x7fffd4101e2e
+A[0] = 1
+A[1] = 2
+A[2] = 3
+A[3] = 4
+A[4] = 5
+A[5] = 6
+A[6] = 7
+A[7] = 8
+A[8] = 9
+A[9] = 10
+A[10] = 11
+A[11] = 12
+A[12] = 13
+A[13] = 14
+A[14] = 15
+A[15] = 16
+A[16] = 17
+A[17] = 18
+A[18] = 19
+A[19] = 20
+A[20] = 21
+A[21] = 22
+A[22] = 23
+A[23] = 24
+A[24] = 25
+A[25] = 26
+A[26] = 27
+A[27] = 28
+A[28] = 29
+A[29] = 30
+A[30] = 31
+A[31] = 32
+A[32] = 33
+A[33] = 34
+A[34] = 35
+A[35] = 36
+A[36] = 37
+A[37] = 38
+A[38] = 39
+A[39] = 40
+A[40] = 41
+A[41] = 42
+A[42] = 43
+A[43] = 44
+A[44] = 45
+A[45] = 46
+A[46] = 47
+A[47] = 48
+A[48] = 49
+A[49] = 50
+A[50] = 51
+A[51] = 52
+A[52] = 53
+A[53] = 54
+A[54] = 55
+A[55] = 56
+A[56] = 57
+A[57] = 58
+A[58] = 59
+A[59] = 60
+A[60] = 61
+A[61] = 62
+A[62] = 63
+A[63] = 64
+A[64] = 65
+A[65] = 66
+A[66] = 67
+A[67] = 68
+A[68] = 69
+A[69] = 70
+A[70] = 71
+A[71] = 72
+A[72] = 73
+A[73] = 74
+A[74] = 75
+A[75] = 76
+A[76] = 77
+A[77] = 78
+A[78] = 79
+A[79] = 80
+A[80] = 81
+A[81] = 82
+A[82] = 83
+A[83] = 84
+A[84] = 85
+A[85] = 86
+A[86] = 87
+A[87] = 88
+A[88] = 89
+A[89] = 90
+A[90] = 91
+A[91] = 92
+A[92] = 93
+A[93] = 94
+A[94] = 95
+A[95] = 96
+A[96] = 97
+A[97] = 98
+A[98] = 99
+A[99] = 100
+[?2004h+[[32m17[0m]$ [Kexit
+[?2004lexit
+
+Script done on 2025-04-03 11:49:16-04:00 [COMMAND_EXIT_CODE="0"]

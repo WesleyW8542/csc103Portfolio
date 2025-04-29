@@ -1,0 +1,80 @@
+Script started on 2025-04-29 10:53:17-04:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="103" LINES="26"]
+[?2004h+[[32m22[0m]$ [K+[[32m22[0m]$ [K+[[32m22[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o recursion recursion.cpp
+[01m[Krecursion.cpp:[m[K In function '[01m[Kint[01;32m[K main[m[K()[m[K':
+[01m[Krecursion.cpp:26:27:[m[K [01;35m[Kwarning: [m[Kformat '[01m[K%lu[m[K' expects argument of type '[01m[Klong unsigned int[m[K', but argument 2 has type '[01m[Kint[m[K' [[01;35m[K-Wformat=[m[K]
+   26 |                 printf("[01;35m[K%lu[m[K! == %lu\n",[32m[Kx[m[K,f(x));
+      |                         [01;35m[K~~^[m[K            [32m[K~[m[K
+      |                           [01;35m[K|[m[K            [32m[K|[m[K
+      |                           [01;35m[K|[m[K            [32m[Kint[m[K
+      |                           [01;35m[Klong unsigned int[m[K
+      |                         [32m[K%u[m[K
+[?2004h+[[32m22[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o recursion recursion.cpp
+[?2004h+[[32m22[0m]$ echo {1..10} | ./recursion 
+[?2004l1! == 1
+2! == 2
+3! == 6
+4! == 24
+5! == 120
+6! == 720
+7! == 5040
+8! == 40320
+9! == 362880
+10! == 3628800
+[?2004h+[[32m22[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o recursion recursion.cpp
+[?2004h+[[32m22[0m]$ ./recursion 
+[?2004labout to call  4
+about to call  3
+about to call  2
+about to call  1
+about to call  0
+stopping at 0
+came back from 0
+came back from 1
+came back from 2
+came back from 3
+came back from 4
+[?2004h+[[32m22[0m]$ [K[K+[[32m22[0m]$ [K+[[32m22[0m]$ [K+[[32m22[0m]$ [K+[[32m22[0m]$ make
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o recursion recursion.cpp
+[?2004h+[[32m22[0m]$ echo {11.  ..10} | ./recursion 
+[?2004l1! == 1
+2! == 2
+3! == 3
+4! == 5
+5! == 8
+6! == 13
+7! == 21
+8! == 34
+9! == 55
+10! == 89
+[?2004h+[[32m22[0m]$ [Kmake
+[?2004lg++ -O2 -Wall -Wvla -Wshadow -Wformat=2 -Wunused-parameter -DNDEBUG -o recursion recursion.cpp
+[?2004h+[[32m22[0m]$ ./  ecoh {      echo {1..10} | ./recursion 
+[?2004lfib(1) == 1
+fib(2) == 2
+fib(3) == 3
+fib(4) == 5
+fib(5) == 8
+fib(6) == 13
+fib(7) == 21
+fib(8) == 34
+fib(9) == 55
+fib(10) == 89
+[?2004h+[[32m22[0m]$ [Ktime      time echo 42 | ./recursion 
+[?2004lfib(42) == 433494437
+
+real	0m0.685s
+user	0m0.681s
+sys	0m0.004s
+[?2004h+[[32m22[0m]$ [Ktime echo 44 | ./recursion 
+[?2004lfib(44) == 1134903170
+
+real	0m1.720s
+user	0m1.716s
+sys	0m0.002s
+[?2004h+[[32m22[0m]$ [K[K+[[32m22[0m]$ [?2004l
+exit
+
+Script done on 2025-04-29 11:53:24-04:00 [COMMAND_EXIT_CODE="0"]
