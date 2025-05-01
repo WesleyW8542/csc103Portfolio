@@ -13,10 +13,27 @@ using std::cout;
 using std::vector;
 
 /* your answer goes here... */
-
+bool sumOfTwo(vector<int> V, int t)
+{
+	for(size_t i = 0; i < V.size(); i++)
+	{
+		for(size_t j = i + 1; j < V.size(); j++)
+		{
+			if(V[i] + V[j] == t)
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	vector<int> a = {4,5,6,7};
+	int num = 8;
+	bool answer = sumOfTwo(a, num);
+	cout << answer <<'\n';
 	return 0;
 }
 

@@ -13,11 +13,27 @@ using std::vector;
 /* your answer goes here: */
 void pop_front(vector<int>& V)
 {
+	if(V.size() != 0)
+	{
+		for(size_t i = 1; i < V.size(); i++)
+		{
+			V[i - 1] = V[i];
+		}
+		V.pop_back();
+	}
 }
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	vector<int> v = {6,10,15};
+	pop_front(v);
+
+	for(int i = 0; i < v.size(); i++)
+	{
+		cout << v[i] << " ";
+	}
+	cout << '\n';
 	return 0;
 }
 

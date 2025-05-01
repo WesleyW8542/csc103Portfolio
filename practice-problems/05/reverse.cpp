@@ -9,17 +9,37 @@ using std::cout;
 #include <vector>
 using std::vector;
 
-vector<int> reverse(vector<int>& a)
+void reverse(vector<int>& a)
 {
-	for (int i = a.size()-1; i >= 0; i--)
+	int n = a.size();
+	for (int i = 0; i < n/2; i++)
 	{
-		
+		int temp = a[i];
+		a[i] = a[n - 1 - i];
+		a[n - 1 - i] = temp;
 	}
 }
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	vector<int> v = {4,5,6};
+	reverse(v);
+
+	for(int i = 0; i < v.size(); i++)
+	{
+		cout << v[i] << " ";
+	}
+	cout << '\n';
+
+	vector<int> s = {4,5,6,7};
+	reverse(s);
+
+	for(int i = 0; i < s.size(); i++)
+	{
+		cout << s[i] << " ";
+	}
+	cout << '\n';
 	return 0;
 }
 

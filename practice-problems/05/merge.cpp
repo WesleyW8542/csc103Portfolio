@@ -14,11 +14,50 @@ using std::cout;
 using std::vector;
 
 /* your answer goes here... */
+vector<int> merge(vector<int>& V1, vector<int>& V2)
+{
+	vector<int> answer;
+	size_t V1Added = 0, V2Added = 0;
+	while(V1Added < V1.size() && V2Added < V2.size())
+	{
+		if(V1[V1Added] <= V2[V2Added])
+		{
+			answer.push_back(V1[V1Added]);
+			V1Added++;
+		}
+		else 
+		{
+			answer.push_back(V2[V2Added]);
+			V2Added++;
+		}
+	}
 
+	while(V1Added < V1.size())
+	{
+		answer.push_back(V1[V1Added]);
+		V1Added++;
+	}
+
+	while(V2Added < V2.size())
+	{
+		answer.push_back(V2[V2Added]);
+		V2Added++;
+	}
+	return answer;
+}
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	vector<int> V1 = {1, 2, 5, 7};
+	vector<int> V2 = {2, 3, 5, 8};
+
+	vector<int> merged = merge(V1, V2);
+	for (int i = 0; i < merged.size(); i++)
+	{
+		cout << merged[i] << " ";
+	}
+	cout << "\n";
+
 	return 0;
 }
-
 // vim:foldlevel=2

@@ -14,10 +14,28 @@ using std::vector;
 
 int polyeval(const vector<int>& C, int x);
 
+int polyeval(const vector<int>& C, int x)
+{
+	int ans = 0;
+    int power = 1; 
+
+    for (int i = 0; i < C.size(); i++)
+    {
+        ans += C[i] * power;
+        power *= x; 
+    }
+
+    return ans;
+}
+
 int main()
 {
 	/* TODO: once you have written polyeval, add some test code here */
+	vector<int> C = {1, 2, 3}; 
+    int x = 2;
+
+    int result = polyeval(C, x);
+    cout << result << "\n"; 
 	return 0;
 }
-
 // vim:foldlevel=2

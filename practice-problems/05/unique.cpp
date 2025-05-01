@@ -11,10 +11,34 @@ using std::cout;
 using std::vector;
 
 /* your answer goes here... */
+vector<int> unique(vector<int>& V)
+{
+	vector<int> ans;
+	int last = V[0];
+	ans.push_back(last);
+	for(int i = 1; i < V.size(); i++)
+	{
+		if(V[i] != last) 
+		{
+			ans.push_back(V[i]);
+			last = V[i];
+		}
+	}
+	return ans;
+}
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	vector<int> V = {1, 2, 2, 3, 3, 3, 4};
+
+    vector<int> result = unique(V);
+
+    for(int i = 0; i < result.size(); i++)
+    {
+        cout << result[i] << " ";
+    }
+    cout << "\n";
 	return 0;
 }
 

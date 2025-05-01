@@ -10,10 +10,37 @@ using std::cout;
 using std::vector;
 
 /* your answer goes here... */
+void sort(vector<int>& V)
+{
+    for (size_t i = 0; i < V.size(); ++i)
+    {
+        size_t position = i;
+        for (size_t j = i + 1; j < V.size(); ++j)
+        {
+            if (V[j] < V[position])
+            {
+                position = j;
+            }
+        }
+        int temp = V[i];
+        V[i] = V[position];
+        V[position] = temp;
+    }
+}
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	vector<int> V = {9, 4, 2, 8, 1};
+
+    sort(V);
+
+    for(int i = 0; i < V.size(); i++)
+    {
+        cout << V[i] << " ";
+    }
+    cout << "\n";
+
 	return 0;
 }
 

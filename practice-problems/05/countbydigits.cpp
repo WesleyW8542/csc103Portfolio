@@ -29,9 +29,43 @@ using std::vector;
 
 size_t countdigits(size_t n);
 
+size_t countdigits(size_t n)
+{
+	if (n == 0) 
+	{
+		return 1;
+	}
+
+    size_t count = 0;
+    while (n > 0)
+    {
+        n /= 10;
+        count++;
+    }
+    return count;
+}
+
 int main()
 {
-	return 0;
+	vector<size_t> counts(21, 0); 
+	size_t userInput;
+	
+	while (cin >> userInput)
+	{
+		size_t digitCount = countdigits(userInput);
+		if (digitCount < counts.size())
+		{
+			counts[digitCount]++;
+		}
+	}
+
+	for (size_t i = 1; i < counts.size(); i++)
+	{
+		if (counts[i] > 0)
+		{
+			cout << i << " : " << counts[i] << "\n";
+		}
+	}
 }
 
 // vim:foldlevel=2
