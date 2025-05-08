@@ -15,10 +15,36 @@ using std::endl;
 using std::string;
 
 /* your answer goes here... */
+int countWords(const string &s) 
+{
+    bool inWord;
+    int count = 0;
+
+	for (int i = 0; i < s.length(); i++) 
+	{
+		char c = s[i];
+		if (c == ' ' || c == '\t' || c == '\n') 
+		{
+			inWord = false;
+		} 
+		else if (!inWord) 
+		{
+			count++;
+			inWord = true;
+		}
+	}
+
+    return count;
+}
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	string input = "hello world";
+
+    int count = countWords(input);
+
+    cout << count << '\n';
 	return 0;
 }
 

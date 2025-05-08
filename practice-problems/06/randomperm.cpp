@@ -20,11 +20,29 @@ using std::endl;
 using std::string;
 
 /* your answer goes here... */
+void shuffleString(string &s)
+{
+    int n = s.length();
+    for (int i = 0; i < n - 1; i++) 
+    {
+        int j = i + rand() % (n - i); 
+
+        char temp = s[i];
+        s[i] = s[j];
+        s[j] = temp;
+    }
+}
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
-	return 0;
+	srand(time(0)); // seed rand once
+
+    string s = "abcdefg";
+    shuffleString(s);
+    cout << "Shuffled: " << s << endl;
+
+    return 0;
 }
 
 // vim:foldlevel=2

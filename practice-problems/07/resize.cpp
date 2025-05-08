@@ -15,6 +15,7 @@ using std::endl;
 /* your answer goes here... */
 void resize(int*& A, size_t oldsize, size_t newsize)
 {
+
 }
 
 int main()

@@ -28,10 +28,41 @@ using std::endl;
 using std::string;
 
 /* your answer goes here... */
+void crazyCase (string &s)
+{
+	for(int i = 0; i < s.length(); i++)
+	{
+		if(s[i] == '.')
+		{
+			s[i] = '!';
+		}
+		else if((s[i] >= 'a' && s[i] <= 'z' || (s[i] >= 'A' && s[i] <= 'Z')))
+		{
+			if(rand() % 2 == 0)
+			{
+				if(s[i] >= 'a' && s[i] <= 'z')
+				{
+					s[i] = s[i] - 32;
+				}
+				else
+				{
+					if(s[i] >= 'A' && s[i] <= 'Z')
+					{
+						s[i] = s[i] + 32;
+					}
+				}
+			}
+		}
+	}
+}
 
 int main()
 {
 	/* TODO: call your function, make sure it works... */
+	srand(time(0));
+	string sentence = "Dragons are merely artifacts of the inane folklore of our ancestors.";
+	crazyCase(sentence);
+	cout << sentence << '\n';
 	return 0;
 }
 

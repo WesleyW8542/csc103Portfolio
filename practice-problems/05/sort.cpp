@@ -12,10 +12,10 @@ using std::vector;
 /* your answer goes here... */
 void sort(vector<int>& V)
 {
-    for (size_t i = 0; i < V.size(); ++i)
+    for (size_t i = 0; i < V.size(); i++)
     {
         size_t position = i;
-        for (size_t j = i + 1; j < V.size(); ++j)
+        for (size_t j = i + 1; j < V.size(); j++)
         {
             if (V[j] < V[position])
             {
