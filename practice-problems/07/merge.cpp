@@ -13,7 +13,36 @@ using std::cin;
 node* merge(node* L1, node* L2)
 {
 	/* TODO: write me */
-	return NULL; /* just so it compiles... */
+	node* head = nullptr;
+	node* tail = nullptr;
+
+	while (L1 || L2)
+	 {
+		int val;
+		if (L1 && (!L2 || L1->data < L2->data)) 
+		{
+			val = L1->data;
+			L1 = L1->next;
+		} 
+		else 
+		{
+			val = L2->data;
+			L2 = L2->next;
+		}
+
+		node* newNode = new node(val);
+		if (!head) 
+		{
+			head = tail = newNode;
+		} 
+		else 
+		{
+			tail->next = newNode;
+			tail = newNode;
+		}
+	}
+
+	return head;
 }
 
 int main()

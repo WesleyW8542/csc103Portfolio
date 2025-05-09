@@ -10,6 +10,14 @@ using std::cin;
 bool search(node* L, int x)
 {
 	/* TODO: write me */
+	while (L != nullptr) 
+	{
+		if (L->data == x) 
+		{
+			return true;
+		}
+		L = L -> next;
+	}
 	return false; /* just so it compiles... */
 }
 

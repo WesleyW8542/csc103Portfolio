@@ -16,7 +16,37 @@ using std::vector;
  * smaller input for recursive calls). */
 vector<vector<int>> ksubsets(vector<int> V, int k)
 {
-	return {}; /* just so it compiles. */
+	if (k == 0) 
+	{
+		vector<vector<int>> base;
+		base.push_back(vector<int>());
+		return base;
+	}
+	if (V.size() < k)
+	{
+		return vector<vector<int>>();
+	}
+
+	int last = V.back();
+	V.pop_back();
+
+	vector<vector<int>> without = ksubsets(V, k);
+
+
+	vector<vector<int>> with = ksubsets(V, k - 1);
+	for (int i = 0; i < with.size(); i++) 
+	{
+		with[i].push_back(last);
+	}
+
+	// Combine both
+	vector<vector<int>> result = without;
+	for (int i = 0; i < with.size(); i++) 
+	{
+		result.push_back(with[i]);
+	}
+
+	return result;
 }
 
 

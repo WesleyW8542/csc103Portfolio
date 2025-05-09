@@ -14,6 +14,15 @@ using std::endl;
 #include <vector>
 using std::vector;
 
+size_t fib(int n) {
+	static vector<size_t> A = {0, 1}; 
+
+	if (n < A.size()) return A[n];
+
+	A.push_back(fib(n - 1) + fib(n - 2));
+	return A[n];
+}
+
 int main()
 {
 	/* TODO: write some code here in main to test your function.  Be sure to
@@ -21,6 +30,9 @@ int main()
 	 * take at least a few seconds on such an input, even on a fast computer).
 	 * NOTE: you should be able to compute about 93 terms before the result no
 	 * longer fits in a size_t on a 64 bit machine. */
+	int n;
+	cin >> n;
+	cout << "fib(" << n << ") = " << fib(n) << endl;
 	return 0;
 }
 

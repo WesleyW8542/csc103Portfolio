@@ -20,9 +20,29 @@ using std::vector;
 #include <string>
 using std::string;
 
+vector<string> generateBinary(int n) {
+	if (n == 0) 
+	{
+		return {""};
+	}
+	vector<string> smaller = generateBinary(n - 1);
+	vector<string> result;
+	for (int i = 0; i < smaller.size(); i++) {
+		result.push_back("0" + smaller[i]);
+		result.push_back("1" + smaller[i]);
+	}
+	return result;
+}
+
 int main()
 {
 	/* TODO: write some test code here */
+	int n;
+	cin >> n;
+	vector<string> binaries = generateBinary(n);
+	for (int i = 0; i < binaries.size(); i++) {
+		cout << binaries[i] << endl;
+	}
 	return 0;
 }
 

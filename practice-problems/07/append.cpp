@@ -10,16 +10,46 @@ using std::cout;
 using std::cin;
 #include "list-utils.h"
 
+void clear(node* &head) {
+	while (head != nullptr) {
+		node* temp = head;
+		head = head->next;
+		delete temp;
+	}
+}
+
 node* append(node* L, int x)
 {
 	/* TODO: write me */
-	return NULL; /* just so it compiles... */
+	node* newNode = new node(x, nullptr);
+	if (L == nullptr) {
+		return newNode;
+	}
+	node* p = L;
+	while (p->next != nullptr) {
+		p = p->next;
+	}
+	p->next = newNode;
+	return newNode;
 }
 
 int main()
 {
 	/* TODO: use your function to build a list from stdin by appending
 	 * over and over. */
+	node* head = nullptr;
+	node* tail = nullptr;
+	int x;
+	while (cin >> x) {
+		if (head == nullptr) {
+			head = append(nullptr, x);
+			tail = head;
+		} else {
+			tail = append(head, x);
+		}
+	}
+	printlist(head);
+	clear(head); 
 	return 0;
 }
 

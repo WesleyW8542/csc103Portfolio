@@ -14,6 +14,11 @@ struct node {
 void clear(node*& L)
 {
 	/* TODO: write me */
+	while (L != nullptr) {
+		node* temp = L;
+		L = L -> next;
+		delete temp;
+	}
 }
 
 int main()

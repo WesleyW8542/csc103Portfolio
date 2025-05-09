@@ -19,6 +19,18 @@ using std::cin;
 bool remove(node*& L, int x)
 {
 	/* TODO: (re)write me */
+	node** curr = &L;  
+
+	while (*curr) {
+		if ((*curr)->data == x) {
+			node* temp = *curr;
+			*curr = (*curr)->next;  
+			delete temp;
+			return true;
+		}
+		curr = &((*curr)->next);
+	}
+
 	return false; /* just so it compiles... */
 }
 

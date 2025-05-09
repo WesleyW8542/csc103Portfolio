@@ -12,7 +12,18 @@ using std::cin;
 node* copy(node* L)
 {
 	/* TODO: write me */
-	return NULL; /* just so it compiles... */
+	if (L == nullptr) return nullptr;
+
+	node* head = new node(L->data);
+	node* tail = head;
+	L = L->next;
+
+	while (L != nullptr) {
+		tail->next = new node(L->data);
+		tail = tail->next;
+		L = L->next;
+	}
+	return head;
 }
 
 int main()

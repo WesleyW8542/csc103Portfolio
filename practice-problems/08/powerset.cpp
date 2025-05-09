@@ -16,7 +16,27 @@ using std::vector;
  * smaller input for recursive calls). */
 vector<vector<int>> powerset(vector<int> V)
 {
-	return {}; /* just so it compiles. */
+	
+	if (V.empty())
+	 {
+		vector<vector<int>> base;
+		base.push_back(vector<int>());
+		return base;
+	}
+
+	int last = V.back();
+	V.pop_back();
+
+	vector<vector<int>> smaller = powerset(V);
+	vector<vector<int>> result = smaller;
+
+	for (int i = 0; i < smaller.size(); i++) 
+	{
+		vector<int> subset = smaller[i];
+		subset.push_back(last);
+		result.push_back(subset);
+	}
+	return result;
 }
 
 

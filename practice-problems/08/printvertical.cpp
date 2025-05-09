@@ -12,9 +12,22 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+void printDigits(int n) {
+	if (n < 10) 
+	{
+		cout << n << endl;
+		return;
+	}
+	printDigits(n / 10);
+	cout << n % 10 << endl;
+}
+
 int main()
 {
 	/* TODO: write some code here in main to test your function. */
+	int n;
+	cin >> n;
+	printDigits(n);
 	return 0;
 }
 

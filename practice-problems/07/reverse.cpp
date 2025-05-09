@@ -11,6 +11,16 @@ using std::cin;
 void reverse(node*& L)
 {
 	/* TODO: write me */
+	node* prev = nullptr;
+	node* curr = L;
+	while (curr != nullptr) 
+	{
+		node* next = curr->next;
+		curr->next = prev;
+		prev = curr;
+		curr = next;
+	}
+	L = prev;
 }
 
 int main()
